@@ -1,5 +1,5 @@
 # 1) 텍스트 파일 자동 감지 및 LF 표준화
-* text=auto
+* text=auto eol=lf
 # 2) 스크립트 & 셰이더용 diff 드라이버
 *.cs     text diff=csharp
 *.shader text diff=shader
