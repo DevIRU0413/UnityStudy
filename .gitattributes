@@ -1,0 +1,36 @@
+# 1) 텍스트 파일 자동 감지 및 LF 표준화
+* text=auto
+
+# 2) 스크립트 & 셰이더용 diff 드라이버
+*.cs     text diff=csharp
+*.shader text diff=shader
+*.cginc  text diff=shader
+
+# 3) Unity YAML 파일에 Smart Merge 설정
+*.unity       merge=unityyamlmerge text eol=lf
+*.prefab      merge=unityyamlmerge text eol=lf
+*.asset       merge=unityyamlmerge text eol=lf
+*.anim        merge=unityyamlmerge text eol=lf
+*.controller  merge=unityyamlmerge text eol=lf
+*.mask        merge=unityyamlmerge text eol=lf
+*.overrideController merge=unityyamlmerge text eol=lf
+*.playable    merge=unityyamlmerge text eol=lf
+*.preset      merge=unityyamlmerge text eol=lf
+*.spriteatlas merge=unityyamlmerge text eol=lf
+
+# 4) 메타파일은 항상 텍스트로 병합
+*.meta        text merge=unityyamlmerge eol=lf
+
+# 5) 바이너리 파일로 처리
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.tga   binary
+*.psd   binary
+*.fbx   binary
+*.obj   binary
+*.mp3   binary
+*.wav   binary
+*.ogg   binary
+*.mp4   binary
+*.mov   binary
